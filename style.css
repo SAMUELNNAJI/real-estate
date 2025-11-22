@@ -259,7 +259,7 @@ svg:hover {
 /* slide in up */
 @keyframes slideup {
     0% {
-        transform: translateY(70px);
+        transform: translateY(20px);
     }
 
     100% {
@@ -603,6 +603,35 @@ footer {
         display: none;
     }
 
+    /* Scroll side end */
+@keyframes scrollend {
+     0% {
+        transform: translateX(80vw);
+        overflow-x: hidden;
+    }
+
+    100% {
+        transform: translateX(-50vw);
+        overflow-x: hidden;
+    }
+}
+
+.scroll-end{
+    overflow: hidden;
+     transform: translateX(80vw);
+    animation: scrollend;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-direction: reverse;
+    animation-duration: 9s;
+}
+
+.scroll-end:hover{
+    overflow-x: hidden;
+    animation-play-state: paused;
+}
+
 
 }
 
@@ -759,4 +788,33 @@ footer {
         display: block;
         margin: auto;
     }
+
+    /* Scroll side end */
+@keyframes scrollend {
+     0% {
+        transform: translateX(1100px);
+        overflow-x: hidden;
+    }
+
+    100% {
+        transform: translateX(-50vw);
+        overflow-x: hidden;
+    }
+}
+
+.scroll-end{
+    overflow: hidden;
+     transform: translateX(1000px);
+    animation: scrollend;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-direction: reverse;
+    animation-duration: 9s;
+}
+
+.scroll-end:hover{
+    overflow-x: hidden;
+    animation-play-state: paused;
+}
 }
