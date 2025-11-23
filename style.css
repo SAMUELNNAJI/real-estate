@@ -229,8 +229,8 @@ svg:hover {
 }
 
 .fadein {
-    animation: p1 1.7s ease-in;
-    animation-timeline: view(70vh 0vh);
+    animation: p1 1s ease-in;
+    animation-timeline: view(120% 0%);
     opacity: 1;
     transition: all ease-in;
 }
@@ -243,7 +243,6 @@ svg:hover {
 
     100% {
         transform: translateX(0);
-        transform: none;
 
     }
 }
@@ -256,10 +255,32 @@ svg:hover {
     animation-timeline: view(70vh 0%);
 }
 
+
+/* Scroll-in animation */
+@keyframes scroll-in-right {
+    0% {
+        transform: translateX(1100px);
+    }
+
+    100% {
+        transform: translateX(0);
+        transform: none;
+
+    }
+}
+
+
+.scroll-1 {
+    transform: translateX(0);
+    animation: scroll-in-right ease;
+    animation-duration: 2ms;
+    animation-timeline: view(70vh 0%);
+}
+
 /* slide in up */
 @keyframes slideup {
     0% {
-        transform: translateY(20px);
+        transform: translateY(70px);
     }
 
     100% {
@@ -270,7 +291,7 @@ svg:hover {
 .slide-up {
     animation: slideup 2s ease-in both;
     animation-timeline: view(80vh 0%);
-    transform: translateY(0px);
+    transform: translateY(0);
 }
 
 /* Scroll side end */
@@ -286,21 +307,6 @@ svg:hover {
     }
 }
 
-.scroll-end{
-    overflow: hidden;
-     transform: translateX(1000px);
-    animation: scrollend;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
-    animation-direction: reverse;
-    animation-duration: 9s;
-}
-
-.scroll-end:hover{
-    overflow-x: hidden;
-    animation-play-state: paused;
-}
 
 /* management */
 .management {
