@@ -11,6 +11,100 @@ body {
     Font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji background-color#FAFAFA width="100px";
 }
 
+/* keyframes */
+@keyframes heading1 {
+    0% {
+        transform: translateX(-700px);
+    }
+
+
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+/* fedein animation */
+@keyframes p1 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadein {
+    animation: p1 1s ease-in;
+    animation-timeline: view(100% 0%);
+    opacity: 1;
+    transition: all ease-in;
+}
+
+/* Scroll-in animation */
+@keyframes scroll-in {
+    0% {
+        transform: translateX(-1100px);
+    }
+
+    100% {
+        transform: translateX(0);
+
+    }
+}
+
+
+.scroll {
+    transform: translateX(0);
+    animation: scroll-in ease;
+    animation-duration: 2ms;
+    animation-timeline: view(100% 0%);
+}
+
+
+/* Scroll-in animation */
+@keyframes scroll-in-right {
+    0% {
+        transform: translateX(1100px);
+    }
+
+    100% {
+        transform: translateX(0);
+        transform: none;
+
+    }
+}
+
+
+.scroll-1 {
+    transform: translateX(0);
+    animation: scroll-in-right ease;
+    animation-duration: 2ms;
+    animation-timeline: view(100% 0%);
+}
+
+/* slide in up */
+@keyframes slideup {
+    0% {
+        transform: translateY(70px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.slide-up {
+    animation: slideup 2s ease-in both;
+    animation-timeline: view(100% 0%);
+    transform: translateY(0);
+}
+
+
+
+/* Header section */
 .header {
     position: absolute;
     top: 0;
@@ -32,7 +126,7 @@ header {
     position: fixed;
     top: 10px;
     padding: 20px;
-    width: 90vw;
+    width: 90%;
     z-index: 9999999999999999;
 }
 
@@ -115,6 +209,8 @@ svg:hover {
     justify-content: center;
 }
 
+/* Hero Section */
+
 .hero {
     overflow: hidden;
     position: relative;
@@ -137,11 +233,7 @@ svg:hover {
             animation-name: heading1;
             animation-duration: 1.7s;
             animation-timing-function: ease-in;
-            animation-delay: 0s;
-            animation-iteration-count: 1;
-            animation-direction: normal;
             animation-fill-mode: both;
-            animation-timeline: veiw;
         }
 
 
@@ -203,109 +295,6 @@ svg:hover {
 }
 
 
-/* keyframes */
-@keyframes heading1 {
-    0% {
-        transform: translateX(-700px);
-    }
-
-
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
-
-/* fedein animation */
-@keyframes p1 {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.fadein {
-    animation: p1 1s ease-in;
-    animation-timeline: view(120% 0%);
-    opacity: 1;
-    transition: all ease-in;
-}
-
-/* Scroll-in animation */
-@keyframes scroll-in {
-    0% {
-        transform: translateX(-1100px);
-    }
-
-    100% {
-        transform: translateX(0);
-
-    }
-}
-
-
-.scroll {
-    transform: translateX(0);
-    animation: scroll-in ease;
-    animation-duration: 2ms;
-    animation-timeline: view(70vh 0%);
-}
-
-
-/* Scroll-in animation */
-@keyframes scroll-in-right {
-    0% {
-        transform: translateX(1100px);
-    }
-
-    100% {
-        transform: translateX(0);
-        transform: none;
-
-    }
-}
-
-
-.scroll-1 {
-    transform: translateX(0);
-    animation: scroll-in-right ease;
-    animation-duration: 2ms;
-    animation-timeline: view(70vh 0%);
-}
-
-/* slide in up */
-@keyframes slideup {
-    0% {
-        transform: translateY(70px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
-.slide-up {
-    animation: slideup 2s ease-in both;
-    animation-timeline: view(80vh 0%);
-    transform: translateY(0);
-}
-
-/* Scroll side end */
-@keyframes scrollend {
-     0% {
-        transform: translateX(1100px);
-        overflow-x: hidden;
-    }
-
-    100% {
-        transform: translateX(-50vw);
-        overflow-x: hidden;
-    }
-}
 
 
 /* management */
@@ -671,7 +660,7 @@ footer {
             position: relative;
             top: 230px;
             height: 80vh;
-            width: 95vw;
+            width: 95%;
             object-fit: cover;
             overflow: hidden;
         }
@@ -702,6 +691,7 @@ footer {
 
         button {
             margin-bottom: 20px;
+            transition: all 0.6s ease-in ;
         }
 
         img {
@@ -757,7 +747,7 @@ footer {
 
     footer {
         .footer-container {
-            width: 95vw;
+            width: 95%;
             height: 250px;
             background-color: #dcd7d73a;
             backdrop-filter: blur(16px);
@@ -768,7 +758,7 @@ footer {
             position: relative;
             padding: 30px;
             flex-wrap: wrap;
-            margin-inline: 0px;
+            margin-inline: auto;
         }
 
         p {
@@ -798,12 +788,12 @@ footer {
     /* Scroll side end */
 @keyframes scrollend {
      0% {
-        transform: translateX(1100px);
+        transform: translateX(1180px);
         overflow-x: hidden;
     }
 
     100% {
-        transform: translateX(-50vw);
+        transform: translateX(-10vw);
         overflow-x: hidden;
     }
 }
