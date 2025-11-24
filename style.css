@@ -109,7 +109,7 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
 }
@@ -126,7 +126,7 @@ header {
     position: fixed;
     top: 10px;
     padding: 20px;
-    width: 90%;
+    width: 90vw;
     z-index: 9999999999999999;
 }
 
@@ -165,10 +165,10 @@ nav a:hover {
 
 .mobile .MobileMenu {
     top: 0;
-    right: -16px;
+    right: 0;
     display: none;
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.457);
+    background-color: #475b6459;
     backdrop-filter: blur(10px);
     box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.374);
     width: 350px;
@@ -177,6 +177,8 @@ nav a:hover {
     justify-content: flex-start;
     align-items: flex-start;
     padding: 20px;
+    z-index: 9999999999999999999999999;
+    border-radius: 42px;
 }
 
 svg {
@@ -511,8 +513,9 @@ footer {
     margin-top: 60px;
     background-image: url(./1763638624052.jpg);
     background-position: center;
-    background-repeat: no-repeat;
-    height: 600px;
+    background-size: cover;
+    background-repeat: repeat;
+    height: auto;
 
     h2 {
         text-align: center;
@@ -541,12 +544,12 @@ footer {
 
     .footer-container {
         width: 95vw;
-        height: 390px;
+        height: auto;
         background-color: #dcd7d73a;
         backdrop-filter: blur(16px);
         display: flex;
         justify-content: space-between;
-        margin-top: 10px;
+        margin-top: 140px;
         border-radius: 40px;
         position: relative;
         padding: 20px;
@@ -580,6 +583,11 @@ footer {
         flex-wrap: wrap;
     }
 
+    p{
+        max-width: 500px;
+        color: antiquewhite;
+    }
+
     .info {
         display: flex;
         justify-content: center;
@@ -587,10 +595,17 @@ footer {
         margin-top: 10px;
         z-index: 99999999999;
         position: relative;
+        color: #ffffff;
+        padding-bottom: 20px;
+        text-align: center;
+        padding-inline: 30px;
 
     }
 
+   
 }
+
+
 
 /* MOBILE MEDIA QUERY */
 @media (max-width:1200px) {
