@@ -616,12 +616,12 @@ footer {
     /* Scroll side end */
 @keyframes scrollend {
      0% {
-        transform: translateX(80vw);
+        transform: translateX(100vw);
         overflow-x: hidden;
     }
 
     100% {
-        transform: translateX(-50vw);
+        transform: translateX(0vw);
         overflow-x: hidden;
     }
 }
