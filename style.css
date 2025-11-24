@@ -60,7 +60,7 @@ body {
     transform: translateX(0);
     animation: scroll-in ease;
     animation-duration: 2ms;
-    animation-timeline: view(100% 0%);
+    animation-timeline: view(85% 0%);
 }
 
 
@@ -82,7 +82,7 @@ body {
     transform: translateX(0);
     animation: scroll-in-right ease;
     animation-duration: 2ms;
-    animation-timeline: view(100% 0%);
+    animation-timeline: view(85% 0%);
 }
 
 /* slide in up */
@@ -98,7 +98,7 @@ body {
 
 .slide-up {
     animation: slideup 2s ease-in both;
-    animation-timeline: view(100% 0%);
+    animation-timeline: view(85% 0%);
     transform: translateY(0);
 }
 
