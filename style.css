@@ -616,7 +616,7 @@ footer {
     /* Scroll side end */
 @keyframes scrollend {
      0% {
-        transform: translateX(100vw);
+        transform: translateX(50vw);
         overflow-x: hidden;
     }
 
